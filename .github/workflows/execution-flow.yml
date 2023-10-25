@@ -79,7 +79,7 @@ jobs:
 
   report:
     runs-on: ubuntu-latest
-    need: test
+    needs: test
     if: failure()
     steps:
       - name: Report test
